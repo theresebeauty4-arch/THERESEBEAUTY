@@ -75,5 +75,25 @@
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   <script src="js/main.js"></script>
+   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="main.js"></script>
+   <script>
+  // Script pour ouvrir/fermer le menu mobile
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      
+      // Optionnel : change l'icône du menu (menu burger ☰ vs croix ✕)
+      if (navLinks.classList.contains('active')) {
+        navToggle.innerHTML = '&#x2715;'; // Icône de croix
+      } else {
+        navToggle.innerHTML = '&#x2630;'; // Icône burger
+      }
+    });
+  }
+</script>
 </body>
 </html>
