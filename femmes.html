@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Femmes — Beauty · Salon mixte</title>
+  <meta name="description" content="Coiffure, coloration, mèches, soins profonds et coiffage. Nos prestations femmes chez Beauty." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">THERESE<small>Beauty</small></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="femmes.html">Femmes</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary">Réserver</a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-hero">
+      <div>
+        <p class="eyebrow">Univers Femmes</p>
+        <h1>Une beauté <span class="italic">sur-mesure.</span></h1>
+        <p>De la coupe signature à la coloration végétale, nos coiffeuses imaginent avec vous un résultat qui vous ressemble — naturel, lumineux, intemporel.</p>
+      </div>
+      <div class="img"><img src="presentationfemme.jpg" alt="Prestation femme au salon Beauty" /></div>
+    </section>
+
+    <section class="surface-cream">
+      <div class="container">
+        <div class="section-title">
+          <p class="divider">Prestations</p>
+          <h2>Le carnet des soins</h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <img src="perruque 3.jpg" alt="Coupe et coiffage" />
+            <div class="body">
+              <h3>tissage <span class="price">10 $</span></h3>
+              <p>Diagnostic.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="perruque 1.jpg" alt="Couleur végétale" />
+            <div class="body">
+              <h3>pose perruque <span class="price">dès 10 $</span></h3>
+              <p>avec délicatesse.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="mjour.jpg" alt="Balayage et mèches" />
+            <div class="body">
+              <h3>maquillage jour <span class="price">dès 10 $</span></h3>
+              <p>Éclat sur-mesure, effet ensoleillé et fondu discret.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="soiree.jpg" alt="Soin profond" />
+            <div class="body">
+              <h3>maquillage soirée <span class="price">45 $</span></h3>
+              <p>rayonnez dans toutes les soirée.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="mariage.png" alt="maquillage mariage" />
+            <div class="body">
+              <h3>maquillage mariage <span class="price">65 $</span></h3>
+              <p>coiffure pour vos moments importants.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="soinvisage.jpg" alt="Lissage brésilien" />
+            <div class="body">
+              <h3>soin de visage  <span class="price">dès 5 $</span></h3>
+              <p>visage lisse, brillants.</p>
+            </div>
+          </article>
+        <article class="service-card">
+            <img src="pedicure.jpg" alt="" />
+            <div class="body">
+              <h3>pedicure <span class="price">dès 5 $</span></h3>
+              <p>la beauté sur toutes ses formes.</p>
+            </div>
+          </article>
+        </div>
+        <p style="text-align:center; font-style:italic; margin-top:24px; color:var(--muted); font-size:13px;">Tarifs indicatifs, susceptibles d'évoluer selon la longueur et la densité des cheveux.</p>
+      </div>
+    </section>
+
+    <section style="text-align:center;">
+      <div class="container" style="max-width:600px;">
+        <h2 style="font-size:clamp(28px,4vw,44px);">Envie de franchir le pas ?</h2>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:28px;">Réserver un moment</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">THERESE — Beauty.</div>
+        <p style="margin-top:14px; max-width:400px;">Salon de beauté mixte. Un lieu confidentiel pensé pour révéler la beauté singulière de chacune et chacun.</p>
+        <div class="socials">
+                <a href="https://www.facebook.com/shaks15"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/shako_serge?igsh=YzljYTk1ODg3Zg=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@shako2k?_r=1&_t=ZS-94m3ExvJlk4"><i class="fa-brands fa-tiktok"></i></a></div>
+      </div>
+      <div><h4>Contact</h4><ul><li>34 rue KIsasu, Lemba-terminus</li><li>+243 82 60 81 753</li><li>theresebeauty4@gmail.com</li></ul></div>
+      <div><h4>Horaires</h4><ul><li>lundi — Ven : 9h – 19h</li><li>Samedi : 9h – 18h</li><li>Dim — Lun : Fermé</li></ul></div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> THERESE — Beauty.</div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

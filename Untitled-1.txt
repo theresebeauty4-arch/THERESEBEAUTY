@@ -1,0 +1,34 @@
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Nom *</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="field">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="phone">Téléphone</label>
+            <input id="phone" name="phone" type="tel" />
+          </div>
+          <div class="field">
+            <label for="service">Prestation souhaitée</label>
+            <select id="service" name="service">
+              <option value="">— Choisir —</option>
+              <option>Coupe & coiffage (femme)</option>
+              <option>Couleur / Balayage</option>
+              <option>Soin / Lissage</option>
+              <option>Coupe homme</option>
+              <option>Barbe / Rasage</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Envoyer</button>
+          <div id="form-msg" class="form-msg"></div>
+        </form>
+      </div>

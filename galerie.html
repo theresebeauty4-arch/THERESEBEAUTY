@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie — Beauty · Salon mixte</title>
+  <meta name="description" content="Découvrez en images l'ambiance du salon Beauty et nos plus belles réalisations." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">THERESE<small>Beauty</small></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="femmes.html">Femmes</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary">Réserver</a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" style="text-align:center; padding-bottom:20px;">
+      <p class="eyebrow">Galerie</p>
+      <h1 style="font-size:clamp(42px,6vw,72px);">Les instants <span class="italic">Beauty.</span></h1>
+      <p style="color:var(--muted); max-width:560px; margin:20px auto 0;">Ambiance du salon, réalisations et petits détails qui font notre signature.</p>
+    </section>
+
+    <section class="container">
+      <div class="gallery">
+        <figure class="wide"><img src="gallerie (1).jpg"  /></figure>
+        <figure><img src="gallerie (2).jpg"  /></figure>
+        <figure><img src="gallerie (3).jpg"  /></figure>
+        <figure><img src="gallerie (4).jpg"  /></figure>
+        <figure><img src="gallerie (5).jpg"  /></figure>
+        <figure><img src="gallerie (6).jpg" /></figure>
+        <figure><img src="gallerie (7).jpg"  /></figure>
+        <figure><img src="gallerie (8).jpg"  /></figure>
+        <figure><img src="gallerie (9).jpg"  /></figure>
+        <figure><img src="gallerie (10).jpg"  /></figure>
+        <figure><img src="femme.jpg"  /></figure>
+        <figure><img src="perruque 3.jpg"  /></figure>
+        <figure><img src="perruque 1.jpg"  /></figure>
+        <figure><img src="soinvisage.jpg"  /></figure>
+        <figure><img src="pedicure.jpg"  /></figure>
+        <figure><img src="gal (1).jpg"  /></figure>
+        <figure><img src="gal (2).jpg"  /></figure>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Fermer">✕</button>
+    <img src="" alt="" />
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">THERESE — Beauty.</div>
+        <p style="margin-top:14px; max-width:400px;">Salon de beauté mixte. Un lieu confidentiel pensé pour révéler la beauté singulière de chacune et chacun.</p>
+        <div class="socials">
+                <a href="https://www.facebook.com/shaks15"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/shako_serge?igsh=YzljYTk1ODg3Zg=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@shako2k?_r=1&_t=ZS-94m3ExvJlk4"><i class="fa-brands fa-tiktok"></i></a>     </div>
+      </div>
+      <div><h4>Contact</h4><ul><li>34 rue KIsasu, Lemba-terminus</li><li>+243 82 60 81 753</li><li>theresebeauty4@gmail.com</li></ul></div>
+      <div><h4>Horaires</h4><ul><li>lundi — Ven : 9h – 19h</li><li>Samedi : 9h – 18h</li><li>Dim — Lun : Fermé</li></ul></div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> THERESE — Beauty.</div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

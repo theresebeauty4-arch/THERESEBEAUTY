@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beauty — Salon de beauté mixte à Paris</title>
+  <meta name="description" content="Beauty, salon de beauté mixte à Paris : coiffure, coloration, barbier et soins dans un écrin rose poudré." />
+  <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+    <script src="https://kit.fontawesome.com/3e81589fe8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">THERESE<small>Beauty</small></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="femmes.html">Femmes</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary">Réserver</a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero">
+      <div>
+        <p class="eyebrow">THERESE — Beauty.</p>
+        <h1>L'art de se<br /><span class="italic">révéler.</span></h1>
+        <p>Chez Beauty, coiffure, coloration, soins et barbier se conjuguent dans un écrin feutré. Une équipe attentive, une gestuelle minutieuse, un rituel pensé pour vous.</p>
+        <div class="cta-row">
+          <a href="contact.html" class="btn btn-primary">Prendre rendez-vous</a>
+          <a href="femmes.html" class="btn btn-ghost">Découvrir nos soins</a>
+        </div>
+      </div>
+      <div class="hero-img-wrap">
+        <img src="hero-salon.jpg" alt="Intérieur du salon Beauty aux tons rose poudré" />
+      </div>
+    </section>
+
+    <section class="surface-cream">
+      <div class="container" style="text-align:center; max-width:720px;">
+        <p class="divider">Notre philosophie</p>
+        <h2 style="font-size:clamp(32px,4vw,52px); margin-top:24px;">Un instant suspendu,<br /><span class="italic">rien que pour vous.</span></h2>
+        <p style="margin-top:20px; color:var(--muted);">Nous croyons que la beauté se cultive dans la douceur. Chaque rendez-vous commence par une écoute attentive et se poursuit avec des produits soigneusement choisis pour respecter votre nature.</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="duo">
+        <a href="femmes.html" class="duo-card">
+          <img src="femme.jpg" alt="Prestations femmes" />
+          <div class="overlay">
+            <small>Coiffure · Coloration · Soins</small>
+            <h3>Femmes</h3>
+            <span>Découvrir →</span>
+          </div>
+        </a>
+        <a href="galerie.html" class="duo-card">
+          <img src="galerie-2.jpg" alt="Prestations hommes" />
+          <div class="overlay">
+            <small></small>
+            <h3>galerie</h3>
+            <span>Découvrir notre galerie→</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section style="background: rgba(240,220,220,.4);">
+      <div class="container values">
+        <div>
+          <div class="value-icon">✄</div>
+          <h3>Savoir-faire</h3>
+          <p>Une équipe formée aux techniques les plus contemporaines.</p>
+        </div>
+        <div>
+          <div class="value-icon">✿</div>
+          <h3>Produits nobles</h3>
+          <p>Sélection de marques engagées, respectueuses de vos cheveux.</p>
+        </div>
+        <div>
+          <div class="value-icon">♥</div>
+          <h3>Écoute attentive</h3>
+          <p>Un diagnostic personnalisé à chaque visite pour un résultat sur-mesure.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section style="text-align:center;">
+      <div class="container" style="max-width:600px;">
+        <h2 style="font-size:clamp(28px,4vw,44px);">reveillez votre beauté.</h2>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:28px;">Réserver</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">THERESE — Beauty.</div>
+        <p style="margin-top:14px; max-width:400px;">Salon de beauté mixte. Un lieu confidentiel pensé pour révéler la beauté singulière de chacune et chacun.</p>
+        <div class="socials">
+                <a href="https://www.facebook.com/profile.php?id=100086162074691"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/shako_serge?igsh=YzljYTk1ODg3Zg=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@shako2k?_r=1&_t=ZS-94m3ExvJlk4"><i class="fa-brands fa-tiktok"></i></a>     
+        </div>
+      </div>
+         <div><h4>Contact</h4><ul><li>34 rue KIsasu, Lemba-terminus</li><li>+243 82 60 81 753</li><li>theresebeauty4@gmail.com</li></ul></div>
+         <div><h4>Horaires</h4><ul><li>lundi — Ven : 9h – 19h</li><li>Samedi : 9h – 18h</li><li>Dim — Lun : Fermé</li></ul></div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> THERESE — Beauty. Tous droits réservés.</div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Beauty · Salon mixte</title>
+  <meta name="description" content="Prenez rendez-vous ou envoyez-nous un message. Le salon Beauty vous accueille à Paris." />
+  <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+    <script src="https://kit.fontawesome.com/3e81589fe8.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  .contact p{
+    color: black;
+    font-weight: 500;
+  }
+  .contact a{
+    display: flex;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 19px;
+    text-decoration: underline;
+
+  }
+.contact a:hover {
+  color: #acacac;
+}
+</style>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">THERESE<small>Beauty</small></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="femmes.html">Femmes</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary">Réserver</a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" style="text-align:center; padding-bottom:20px;">
+      <p class="eyebrow">Contact</p>
+      <h1 style="font-size:clamp(42px,6vw,72px);">Écrivez-nous, <span class="italic">on vous répond.</span></h1>
+    </section>
+
+    <section class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Adresse</h3>
+          <p>34 rue KIsasu <br>Lemba-terminus <br>réf:ARRET KIYIMBI <br></p>
+          <h3>Téléphone</h3>
+          <p>+243 82 60 81 753</p>
+          <h3>Email</h3>
+          <p>contact@beauty-salon.fr</p>
+          <h3>Horaires</h3>
+          <ul>
+            <li>Mardi — Vendredi : 9h – 19h</li>
+            <li>Samedi : 9h – 18h</li>
+            <li>Dimanche & Lundi : Fermé</li>
+          </ul><br>
+          <div class="contact">
+  <p>cliquez pour nous contacter</p>
+  <a href="mailto:michelshako99@gmail.com">envoyez-nous un message</a>
+</div>
+        </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">THERESE — Beauty.</div>
+        <p style="margin-top:14px; max-width:400px;">Salon de beauté mixte. Un lieu confidentiel pensé pour révéler la beauté singulière de chacune et chacun.</p>
+        <div class="socials">
+                <a href="https://www.facebook.com/shaks15"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/shako_serge?igsh=YzljYTk1ODg3Zg=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@shako2k?_r=1&_t=ZS-94m3ExvJlk4"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+          
+      </div>
+    <div class="footer-bottom">© <span id="year"></span> THERESE — Beauty.</div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="main.js"></script>
+  <script>
+  // Script pour ouvrir/fermer le menu mobile
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      
+      // Optionnel : change l'icône du menu (menu burger ☰ vs croix ✕)
+      if (navLinks.classList.contains('active')) {
+        navToggle.innerHTML = '&#x2715;'; // Icône de croix
+      } else {
+        navToggle.innerHTML = '&#x2630;'; // Icône burger
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
